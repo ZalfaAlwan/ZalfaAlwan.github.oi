@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Website Absensi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Absensi Kelas</h1>
+    </header>
+
+    <section id="absen">
+        <h2>Form Absensi</h2>
+        <form id="absenForm">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+            
+            <label for="kelas">Kelas:</label>
+            <input type="text" id="kelas" name="kelas" required>
+            
+            <button type="submit">Absen</button>
+        </form>
+        <p id="responseMessage"></p>
+    </section>
+
+    <section id="listAbsen">
+        <h2>Daftar Absensi</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama</th>
+                    <th>Kelas</th>
+                    <th>Waktu Absen</th>
+                </tr>
+            </thead>
+            <tbody id="absenList">
+                <!-- Daftar absen akan muncul di sini -->
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; WEBSITE ABSEN ZALFA ALWAN.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
